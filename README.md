@@ -6,7 +6,7 @@ Example: I am planning an online meeting with participants on the east coast of 
 Paris, and Seoul. The plan is at 16:00 my time (in Stockholm), but what time is that
 for the others?
 
-```python
+```
 $ klockslag 16:00 seoul paris eastern
 US/Eastern	10:00:00
 Canada/Eastern	10:00:00
