@@ -1,0 +1,40 @@
+[project]
+name = "timezones"
+authors = [
+    {name = "Lars Arvestad", email = "arve@math.su.se"}
+]
+maintainers = [
+    {name = "Lars Arvestad", email = "arve@math.su.se"},
+]
+description = "A tool for showing times in different timezones"
+readme = "README.md"
+license = {text = "GNU General Public License v3 (GPLv3)"}
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+dependencies = []
+requires-python = ">= 3.6"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project.scripts]
+timezones = "src.timezones:main"
+
+
+[project.urls]
+homepage = "https://github.com/arvestad/timezones"
+
+
+[tool.setuptools]
+packages = ["timezones"]
+
+
+[tool.setuptools.dynamic]
+version = {attr = "src.version.__version__"}
